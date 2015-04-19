@@ -1,0 +1,45 @@
+﻿body * {
+    font-family: 'Times New Roman';
+    font-size: 16px;
+}
+
+body {
+    background-color: darkgray;
+}
+
+h1 {
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+.veryBigText {
+    text-align: center;
+    font-size: 1.8em;
+}
+
+nav ul {
+    text-align: center;
+    list-style-type: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: lightgray;
+}
+
+h1, nav a, h2 {
+    color: #ffffff;
+}
+
+.smallText {
+    font-size: 0.8em;
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}

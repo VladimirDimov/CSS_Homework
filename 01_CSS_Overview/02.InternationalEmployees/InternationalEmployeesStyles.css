@@ -1,0 +1,50 @@
+﻿table, tr, th, span{
+    padding:0;
+    margin:0;
+    font-size:14px;
+    border-spacing: 0;
+    font-family: Calibri;
+}
+
+table{
+    width:100%;
+}
+
+table, th, td{
+    border: 0.5px solid;
+}
+
+th, td{
+    padding:3px; 
+    padding-left: 6px;   
+}
+
+.flag{
+    width: 30px;
+    vertical-align: middle;
+}
+
+tr:nth-child(even){
+    background-color: #c4bebe;
+}
+
+th{
+    background-color: #2fcf44;
+    color: #f1f1f1;
+}
+
+#column1{
+    width: 30%;
+}
+
+#column2, #column3{
+    width: 25%;
+}
+
+#column4{
+    width: 20%;
+}
+
+.countryName{
+    margin-left: 6px;
+}

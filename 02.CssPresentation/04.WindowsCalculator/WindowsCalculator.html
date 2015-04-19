@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="WindowsCalculatorStyles.css" rel="stylesheet" />
+    <title>Windows Calculator</title>
+</head>
+<body>
+    <table id="main">
+        <tr>
+            <td>
+                <img src="resources/images/icon.png" alt="" /><span class="text">Calculator</span><img src="resources/images/controlbox.png" alt="Alternate Text" id="controlbox"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <nav>
+                    <a href="#">View</a>
+                    <a href="#">Edit</a>
+                    <a href="#">Help</a>
+                </nav>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" value="" id="monitor"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table id="binaryRepresentation">
+                    <tr>
+                        <td><input type="text" value="0000" class="bitCell"/></td>
+                        <td><input type="text" value="0000" class="bitCell"/></td>
+                        <td><input type="text" value="0000" class="bitCell"/></td>
+                        <td><input type="text" value="0000" class="bitCell"/></td>
+                        <td><input type="text" value="0000" class="bitCell"/></td>
+                        <td><input type="text" value="0000" class="bitCell"/></td>
+                        <td><input type="text" value="0000" class="bitCell"/></td>
+                        <td><input type="text" value="0000" class="bitCell"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" value ="63" class="bitCell" /></td>
+                        <td><input type="text" class="bitCell, hidden" /></td>
+                        <td><input type="text" class="bitCell, hidden" /></td>
+                        <td><input type="text" class="bitCell, hidden" /></td>
+                        <td><input type="text" value="47" class="bitCell" /></td>
+                        <td><input type="text" class="bitCell, hidden" /></td>
+                        <td><input type="text" class="bitCell, hidden" /></td>
+                        <td><input type="text" value="32" class="bitCell" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" value="0000" class="bitCell" /></td>
+                        <td><input type="text" value="0000" class="bitCell" /></td>
+                        <td><input type="text" value="0000" class="bitCell" /></td>
+                        <td><input type="text" value="0000" class="bitCell" /></td>
+                        <td><input type="text" value="0000" class="bitCell" /></td>
+                        <td><input type="text" value="0000" class="bitCell" /></td>
+                        <td><input type="text" value="0000" class="bitCell" /></td>
+                        <td><input type="text" value="0000" class="bitCell" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" value="31" class="bitCell" /></td>
+                        <td><input type="text" class="bitCell, hidden" /></td>
+                        <td><input type="text" class="bitCell, hidden" /></td>
+                        <td><input type="text" class="bitCell, hidden" /></td>
+                        <td><input type="text" value="15" class="bitCell" /></td>
+                        <td><input type="text" class="bitCell, hidden"/></td>
+                        <td><input type="text" class="bitCell, hidden"/></td>
+                        <td><input type="text" value="0" class="bitCell" /></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table id="buttonsTable">
+                    <colgroup>
+                        <col id=col1></col>
+                        <col id=col2></col>
+                        <col id=col3></col>
+                        <col id=col4></col>
+                        <col id=col5></col>
+                        <col id=col6></col>
+                        <col id=col7></col>
+                        <col id=col8></col>
+                        <col id=col9></col>
+                        <col id=col10></col>
+                    </colgroup>
+                    <tr>
+                        <td colspan="2" rowspan="3">
+                            <form id="formNumSystem">
+                                <input type="radio" value="" name="numSystem" id="hex" />
+                                <label for="hex">Hex</label><br />
+                                <input type="radio" value="" name="numSystem" id="dec" checked />
+                                <label for="dec">Dec</label><br />
+                                <input type="radio" value="" name="numSystem" id="oct" />
+                                <label for="oct">Oct</label><br />
+                                <input type="radio" value="" name="numSystem" id="bin" />
+                                <label for="bin">Bin</label>
+                            </form>
+                        </td>
+                        <td><input type="button" name="name" value=" " /></td>
+                        <td><input type="button" name="name" value="" /></td>
+                        <td><input type="button" name="name" value="" /></td>
+                        <td><input type="button" name="name" value="" /></td>
+                        <td><input type="button" name="name" value="" /></td>
+                        <td><input type="button" name="name" value="" /></td>
+                        <td><input type="button" name="name" value="" /></td>
+                        <td><input type="button" name="name" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" name="name" value="" /></td>
+                        <td><input type="button" name="name" value="" /></td>
+                        <td><input type="button" name="name" value="" /></td>
+                        <td><input type="button" name="name" value="" /></td>
+                        <td><input type="button" name="name" value="" /></td>
+                        <td><input type="button" name="name" value="" /></td>
+                        <td><input type="button" name="name" value="" /></td>
+                        <td><input type="button" name="name" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" name="name" value="" /></td>
+                        <td><input type="button" name="name" value="" /></td>
+                        <td><input type="button" name="name" value="" /></td>
+                        <td><input type="button" name="name" value="" /></td>
+                        <td><input type="button" name="name" value="" /></td>
+                        <td><input type="button" name="name" value="" /></td>
+                        <td><input type="button" name="name" value="" /></td>
+                        <td><input type="button" name="name" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" rowspan="3">
+                            <form id="formBinaryType">
+                                <input type="radio" value="" name="binaryType" id="qword" checked />
+                                <label for="qword">Qword</label><br />
+                                <input type="radio" value="" name="binaryType" id="dword" />
+                                <label for="dword">Dword</label><br />
+                                <input type="radio" value="" name="binaryType" id="word" />
+                                <label for="word">Word</label><br />
+                                <input type="radio" value="" name="binaryType" id="byte" />
+                                <label for="byte">Byte</label>
+                            </form>
+                        </td>
+                        <td><input type="button" name="name" value="" /></td>
+                        <td><input type="button" name="name" value="" /></td>
+                        <td><input type="button" name="name" value="" /></td>
+                        <td><input type="button" name="name" value="" /></td>
+                        <td><input type="button" name="name" value="" /></td>
+                        <td><input type="button" name="name" value="" /></td>
+                        <td><input type="button" name="name" value="" /></td>
+                        <td><input type="button" name="name" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" name="name" value="" /></td>
+                        <td><input type="button" name="name" value="" /></td>
+                        <td><input type="button" name="name" value="" /></td>
+                        <td><input type="button" name="name" value="" /></td>
+                        <td><input type="button" name="name" value="" /></td>
+                        <td><input type="button" name="name" value="" /></td>
+                        <td><input type="button" name="name" value="" /></td>
+                        <td rowspan="2"><input type="button" name="name" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" name="name" value="" /></td>
+                        <td><input type="button" name="name" value="" /></td>
+                        <td><input type="button" name="name" value="" /></td>
+                        <td colspan="2"><input type="button" name="name" value="" /></td>
+                        <td><input type="button" name="name" value="" /></td>
+                        <td><input type="button" name="name" value="" /></td>
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
