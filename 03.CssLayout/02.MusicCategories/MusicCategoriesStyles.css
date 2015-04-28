@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: orange;
+    align-items: center;
+    overflow: visible;
+}
+
+h1 {
+    font-size: 1.6em;
+    font-weight: normal;
+}
+
+main {
+    position: absolute;
+    background: #e0d9d9;
+    padding: 20px;
+    width: 50%;
+    left: 25%;
+    border: 2px solid gray;
+    margin: 30px 0 30px 0;
+    border-radius: 10px;
+}
+
+article {
+    background-color: white;
+    border: 2px solid gray;
+    padding: 20px;
+    position: relative;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+img {
+    float: left;
+    position: relative;
+    width: 250px;
+    margin-right: 20px;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+input[type=button] {
+    position: relative;
+    background: #e73827; /* Old browsers */
+    background: -moz-linear-gradient(left, #e73827 0%, #bc3301 18%, #f16f5c 18%, #f16f5c 18%, #f6290c 18%, #f6290c 18%, #f85032 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#e73827), color-stop(18%,#bc3301), color-stop(18%,#f16f5c), color-stop(18%,#f16f5c), color-stop(18%,#f6290c), color-stop(18%,#f6290c), color-stop(100%,#f85032)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, #e73827 0%,#bc3301 18%,#f16f5c 18%,#f16f5c 18%,#f6290c 18%,#f6290c 18%,#f85032 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, #e73827 0%,#bc3301 18%,#f16f5c 18%,#f16f5c 18%,#f6290c 18%,#f6290c 18%,#f85032 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, #e73827 0%,#bc3301 18%,#f16f5c 18%,#f16f5c 18%,#f6290c 18%,#f6290c 18%,#f85032 100%); /* IE10+ */
+    background: linear-gradient(to right, #e73827 0%,#bc3301 18%,#f16f5c 18%,#f16f5c 18%,#f6290c 18%,#f6290c 18%,#f85032 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e73827', endColorstr='#f85032',GradientType=1 ); /* IE6-9 */
+    font-size: 1.6em;
+    margin: 2px;
+    padding: 5px 20px 5px 20px;
+    color: white;
+    margin-top: 30px;
+    float: right;
+    border: 3px outset red;
+}

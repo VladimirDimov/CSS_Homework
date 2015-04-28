@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+body{
+    position: relative;
+    width: 65%;
+    left: 15%;
+}
+
+header {
+    background-image: url(resources/images/PC.png);
+    background-position-y:center;
+    background-repeat: no-repeat;
+    background-size: 90px 80px;
+    background-color: gray;
+    padding: 30px 20px 30px 20px;
+}
+
+form label {
+    color: white;
+    font-weight: 600;
+    margin-left: 100px;
+}
+
+form * {
+    vertical-align: middle;
+    font-family: arial;
+    font-size: 1.2em;
+    margin-left: 20px;
+}
+
+input[type=submit] {
+    width: 60px;
+    height: 30px;
+    background-image: url(resources/images/Go.png);
+    background-repeat: no-repeat;
+    background-size: 60px 30px;
+    background-color: rgba(0,0,0,0);
+    border: none;
+}
+
+main {
+    background-color: #3B3B3B;
+    padding: 30px;
+}
+
+article h1 {
+    font-size: 2em;
+    color: #ECDA0B;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+article p {
+    font-size: 1.5em;
+    color: #9C9C9C;
+}

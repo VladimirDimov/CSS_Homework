@@ -1,0 +1,19 @@
+ul {
+	list-style-type: none;
+	display: inline-block;
+}
+
+ul li ul{
+	display: none;	
+}
+
+ul li:hover ul{
+	display: block;
+}
+
+a:hover{
+	cursor: hand;
+	cursor: pointer;
+	text-decoration: underline;
+	font-weight: bold;
+}
