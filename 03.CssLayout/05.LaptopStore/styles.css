@@ -5,9 +5,14 @@
   font-family: Arial;
   font-weight: 500; }
 
+body {
+  background-color: orange; }
+
 #container {
+  top: 20px;
+  background-color: white;
   display: block;
-  position: absolute;
+  position: relative;
   border: 1px solid black;
   border-radius: 10px;
   width: 60%;
@@ -19,6 +24,8 @@
       font-size: 1.5em;
       font-weight: 700;
       text-align: center; }
+    #container header a:hover {
+      text-decoration: none; }
     #container header hr {
       height: 1px;
       margin: 10px 30px 10px 30px; }
@@ -48,12 +55,14 @@
         position: relative;
         top: -16px; }
   #container #settings {
-    display: block;
+    position: absolute;
+    bottom: 20%;
+    display: inline-block;
     float: right;
     width: 28%;
     text-align: center;
     padding: 10px;
-    vertical-align: middle; }
+    vertical-align: central; }
     #container #settings label {
       display: inline-block;
       padding: 15px; }
