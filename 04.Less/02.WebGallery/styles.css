@@ -1,0 +1,41 @@
+﻿* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #ccbbbb;
+}
+#thumbnails {
+  height: 150px;
+  text-align: center;
+}
+#thumbnails label img {
+  position: relative;
+  height: 130px;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+#thumbnails label img:first-of-type:hover {
+  zoom: 1.05;
+  border: 3px solid #ca6464;
+  cursor: pointer;
+}
+#thumbnails label img:last-of-type {
+  display: none;
+  zoom: 2;
+}
+#thumbnails input[type=radio] {
+  display: none;
+}
+#thumbnails input[type=radio]:checked + label img:last-of-type {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/*# sourceMappingURL=styles.css.map */

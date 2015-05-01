@@ -13,29 +13,46 @@ body {
     font-family: Calibri;
 }
 
-h1 {
+table caption {
     font-size: 1.5em;
+    text-align: left;
+    color: #AFAEA5;
 }
 
-table {
-    background-color: ActiveCaption;
+#col1{
+    width: 150px;
+}
+
+#col2{
+    width: 220px;
+}
+
+table{
     font-size: 1em;
+}
+
+table, caption {
+    background-color: #585858;
 }
 
 th, .table {
     font-style: italic;
-    color: rgba(255, 255, 255, 0.35);
+    color: #FFFFFF;
 }
 
-#Name, #email, #link {
-    color: aliceblue;
+.light{
+    color:#E8E8B7;
 }
 
-#SupportStatus {
-    color: red;
+.red{
+    color:#C7080F;
 }
 
-#status {
+.dark{
+    color: #A6AEAC;
+}
+
+.orange {
     color: darkorange;
 }
 
@@ -46,6 +63,8 @@ img {
 
 th, td {
     padding: 5px;
+    text-align: left;
+    font-weight: 500;
 }
 
 #name:before {
