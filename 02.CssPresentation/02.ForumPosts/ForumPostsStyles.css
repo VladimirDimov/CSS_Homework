@@ -31,10 +31,7 @@ body {
 }
 
     body header {
-        padding-top: 25px;
-        padding-bottom: 5px;
-        padding-right: 15px;
-        padding-left: 15px;
+        padding: 25px 15px 5px 15px;
     }
 
         body header div#header-container div#logo-container {
@@ -236,17 +233,11 @@ body {
 
                 body aside > ul > li ul {
                     list-style-type: none;
-                    margin-top: 10px;
-                    margin-right: 0;
-                    margin-bottom: 10px;
-                    margin-left: 0px;
+                    margin: 5px 0 10px 0;
                 }
 
                     body aside > ul > li ul li {
-                        margin-top: 5px;
-                        margin-left: 10px;
-                        margin-bottom: 0px;
-                        margin-right: 0px;
+                        margin: 5px 0 0 10px;
                         background: url(images/li-dot.png) no-repeat;
                         background-position: 0 50%;
                         padding-left: 25px;
@@ -254,30 +245,24 @@ body {
 
     body footer {
         clear: both;
-        padding-top: 15px;
-        padding-bottom: 25px;
-        padding-right: 0px;
-        padding-left: 0px;
+        padding: 15px 0 25px 0;
     }
 
         body footer p {
             font-size: 1.2em;
             font-weight: bold;
-        }
-
-        article p{
-            font-size: 1.1em;
-        }
-
-        #btn-register{
-            color: white;
-        }
-
-        li ul li:before{
-            content: url(resources/images/li-dot.png);
-            width: 15px;
-        }
-
-        body footer p{
             text-align: center;
         }
+
+article p {
+    font-size: 1.1em;
+}
+
+#btn-register {
+    color: white;
+}
+
+aside li ul li:before {
+    content: url(resources/images/li-dot.png);
+    width: 15px;
+}
