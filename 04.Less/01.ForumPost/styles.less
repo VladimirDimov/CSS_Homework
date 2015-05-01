@@ -1,0 +1,208 @@
+@color-background-top: #CE90F7;
+@color-background-bottom: #931CF0;
+@font-color: #FDFCFD;
+
+.setBackgroundColor {
+    /* IE10 Consumer Preview */
+    background-image: -ms-linear-gradient(top, @color-background-top 0%, @color-background-bottom 100%);
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(top, @color-background-top 0%, @color-background-bottom 100%);
+    /* Opera */
+    background-image: -o-linear-gradient(top, @color-background-top 0%, @color-background-bottom 100%);
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, @color-background-top), color-stop(1, @color-background-bottom));
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(top, @color-background-top 0%, @color-background-bottom 100%);
+    /* W3C Markup, IE10 Release Preview */
+    background-image: linear-gradient(to bottom, @color-background-top 0%, @color-background-bottom 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border-spacing: 0;
+    font-size: 16px;
+    font-family: 'Times New Roman',Arial;
+}
+
+body {
+    .setBackgroundColor;
+    height: 100%;
+    position: relative;
+}
+
+body > header {
+    position: relative;
+    width: 95%;
+    height: 120px;
+    padding: 20px;
+
+    *{
+        color: @font-color;
+    }
+
+    nav {
+        display: block;
+        width: 75%;
+        position: absolute;
+        bottom: 0;
+        border: 2px solid #50197A;
+        padding: 4px;
+        border-radius: 10px;
+
+        a{
+            text-decoration:none;
+        }
+
+        li {
+            padding: 5px;
+        }
+
+            ul {
+            list-style-type: none;
+        }
+
+        li:hover {
+            cursor: pointer;
+
+            > a {
+                text-decoration: underline;
+            }
+        }
+
+        > ul > li {
+            position: relative;
+            display: flexbox;
+            float: left;
+            margin-left: 20px;
+
+            > ul {
+                position: absolute;
+
+                > li {
+                    display: none;
+                    width: 160px;
+                }
+            }
+
+            &:hover > ul {
+                display: block;
+                background-color: #B96FF1;
+
+                li {
+                    display: block;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    #reg-form-container {
+        position: relative;
+        display: inline-block;
+        float: right;
+
+        input{
+            border: 2px solid #50197A;
+            margin: 5px 0 5px 0;
+            border-radius: 10px;
+            background-color: #B35FF1;
+        }
+    }
+
+    h1 a {
+        position: relative;
+        float: left;
+    }
+
+    button{
+            border: 2px solid #50197A;
+            background-color: #B25FF0;
+            padding: 3px 10px 3px 10px;
+            border-radius: 10px;
+    }
+}
+
+section {
+    padding-top: 40px;
+    padding-left: 20px;
+    width: 70%;
+    float: left;
+
+    article {
+        border: 2px solid #450D71;
+        border-radius: 10px;
+        padding: 30px 20px 30px 20px;
+        display: block;
+        text-align: justify;
+        color: @font-color;
+
+        header {
+
+            h1 {
+                font-size: 1.3em;
+                margin-bottom: 10px;
+            }
+        }
+
+        footer {
+            display: block;
+            margin-top: 5px;
+            text-align: right;
+        }
+    }
+
+    article:nth-child(1n+2) {
+        margin-top: 20px;
+    }
+}
+
+aside {
+    width: 20%;
+    display: block;
+    margin-left: 40px;
+    margin-top: 50px;
+    float: left;
+
+    h2{
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    > ul > li {
+        border: 2px solid #450D71;
+        display: inline-block;
+        width: 100%;
+        padding: 10px;
+        color: @font-color;
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        &:nth-child(1n+2) {
+            margin-top: 20px;
+        }
+
+        &:nth-child(2) li:before{
+            content:url("images/bullet.png");
+        }
+    }
+}
+
+body > footer {
+    position: relative;
+    display: inline-block;
+    bottom: 0;
+    width: 100%;
+    margin: 40px 0 40px 0;
+    text-align: center;
+    color: @font-color;
+}

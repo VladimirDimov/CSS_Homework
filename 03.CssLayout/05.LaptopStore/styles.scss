@@ -17,9 +17,10 @@ body{
     position: relative;
     border: 1px solid black;
     border-radius: 10px;
-    width: 60%;
+    width: 59%;
     left: 20%;
     padding: 5px;
+    zoom: 1;
 
     header {
         text-align: center;
@@ -28,6 +29,7 @@ body{
             font-size: 1.5em;
             font-weight: 700;
             text-align: center;
+            color: #02ABEC;
         }
 
         a:hover{
@@ -43,14 +45,19 @@ body{
     #models {
         display: inline-block;
         width: 66%;
-        border: 2px solid #3D3D3D;
+        border: 1px solid #484848;
         padding: 10px;
 
         fieldset {
             width: 45%;
             float: left;
             display: inline-block;
-            padding: 10px;
+            padding: 10px 10px 0 10px;
+            margin: 1px;
+
+            legend{
+                font-weight: 600;
+            }
 
             img {
                 width: 120px;
@@ -66,6 +73,7 @@ body{
 
                 p {
                     padding-top: 15px;
+                    font-weight: 600;
                 }
             }
 
@@ -73,6 +81,7 @@ body{
                 display: inline-block;
                 position: relative;
                 top: -16px;
+                font-weight: 600;
             }
         }
     }
@@ -83,17 +92,31 @@ body{
         display: inline-block;
         float: right;
         width: 28%;
-        text-align: center;
         padding: 10px;
         vertical-align: central;
 
         label {
             display: inline-block;
             padding: 15px;
+            width: 85%;
+            font-weight: 600;
 
             span {
                 font-size: 1.2em;
                 font-weight: 500;
+            }
+
+            .aLeft{
+                position: relative;
+                display: inline-block;
+                left: 0;
+            }
+
+            .aRight{
+                position: relative;
+                display: inline-block;
+                width: 110px;
+                text-align:center;
             }
         }
 

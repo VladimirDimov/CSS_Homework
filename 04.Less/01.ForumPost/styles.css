@@ -1,0 +1,180 @@
+﻿.setBackgroundColor {
+  /* IE10 Consumer Preview */
+  background-image: -ms-linear-gradient(top, #ce90f7 0%, #931cf0 100%);
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(top, #ce90f7 0%, #931cf0 100%);
+  /* Opera */
+  background-image: -o-linear-gradient(top, #ce90f7 0%, #931cf0 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ce90f7), color-stop(1, #931cf0));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(top, #ce90f7 0%, #931cf0 100%);
+  /* W3C Markup, IE10 Release Preview */
+  background-image: linear-gradient(to bottom, #ce90f7 0%, #931cf0 100%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  border-spacing: 0;
+  font-size: 16px;
+  font-family: 'Times New Roman', Arial;
+}
+body {
+  /* IE10 Consumer Preview */
+  background-image: -ms-linear-gradient(top, #ce90f7 0%, #931cf0 100%);
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(top, #ce90f7 0%, #931cf0 100%);
+  /* Opera */
+  background-image: -o-linear-gradient(top, #ce90f7 0%, #931cf0 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ce90f7), color-stop(1, #931cf0));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(top, #ce90f7 0%, #931cf0 100%);
+  /* W3C Markup, IE10 Release Preview */
+  background-image: linear-gradient(to bottom, #ce90f7 0%, #931cf0 100%);
+  height: 100%;
+  position: relative;
+}
+body > header {
+  position: relative;
+  width: 95%;
+  height: 120px;
+  padding: 20px;
+}
+body > header * {
+  color: #fdfcfd;
+}
+body > header nav {
+  display: block;
+  width: 75%;
+  position: absolute;
+  bottom: 0;
+  border: 2px solid #50197A;
+  padding: 4px;
+  border-radius: 10px;
+}
+body > header nav a {
+  text-decoration: none;
+}
+body > header nav li {
+  padding: 5px;
+}
+body > header nav ul {
+  list-style-type: none;
+}
+body > header nav li:hover {
+  cursor: pointer;
+}
+body > header nav li:hover > a {
+  text-decoration: underline;
+}
+body > header nav > ul > li {
+  position: relative;
+  display: flexbox;
+  float: left;
+  margin-left: 20px;
+}
+body > header nav > ul > li > ul {
+  position: absolute;
+}
+body > header nav > ul > li > ul > li {
+  display: none;
+  width: 160px;
+}
+body > header nav > ul > li:hover > ul {
+  display: block;
+  background-color: #B96FF1;
+}
+body > header nav > ul > li:hover > ul li {
+  display: block;
+}
+body > header nav > ul > li:hover > ul li:hover {
+  text-decoration: none;
+}
+body > header #reg-form-container {
+  position: relative;
+  display: inline-block;
+  float: right;
+}
+body > header #reg-form-container input {
+  border: 2px solid #50197A;
+  margin: 5px 0 5px 0;
+  border-radius: 10px;
+  background-color: #B35FF1;
+}
+body > header h1 a {
+  position: relative;
+  float: left;
+}
+body > header button {
+  border: 2px solid #50197A;
+  background-color: #B25FF0;
+  padding: 3px 10px 3px 10px;
+  border-radius: 10px;
+}
+section {
+  padding-top: 40px;
+  padding-left: 20px;
+  width: 70%;
+  float: left;
+}
+section article {
+  border: 2px solid #450D71;
+  border-radius: 10px;
+  padding: 30px 20px 30px 20px;
+  display: block;
+  text-align: justify;
+  color: #fdfcfd;
+}
+section article header h1 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+section article footer {
+  display: block;
+  margin-top: 5px;
+  text-align: right;
+}
+section article:nth-child(1n+2) {
+  margin-top: 20px;
+}
+aside {
+  width: 20%;
+  display: block;
+  margin-left: 40px;
+  margin-top: 50px;
+  float: left;
+}
+aside h2 {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+aside ul {
+  list-style-type: none;
+}
+aside > ul > li {
+  border: 2px solid #450D71;
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  color: #fdfcfd;
+}
+aside > ul > li h1 {
+  margin-bottom: 20px;
+}
+aside > ul > li:nth-child(1n+2) {
+  margin-top: 20px;
+}
+aside > ul > li:nth-child(2) li:before {
+  content: url("images/bullet.png");
+}
+body > footer {
+  position: relative;
+  display: inline-block;
+  bottom: 0;
+  width: 100%;
+  margin: 40px 0 40px 0;
+  text-align: center;
+  color: #fdfcfd;
+}
+/*# sourceMappingURL=styles.css.map */
