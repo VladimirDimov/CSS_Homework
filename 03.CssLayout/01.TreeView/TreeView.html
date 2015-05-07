@@ -1,22 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="TreeViewStyles.css">
-	<title>Tree view</title>
+    <link rel="stylesheet" href="TreeViewStyles.css">
+    <title>Tree view</title>
 </head>
 <body>
-	<ul>
-	<li><a href="#">List item</a>
-		<ul id="collapsing">
-			<li><a href="#">Sublist item</a></li>
-			<li><a href="#">Sublist item</a></li>
-			<li><a href="#">Sublist item</a></li>
-			<li><a href="#">Sublist item</a></li>			
-		</ul>
-	</li>
-	<li><a href="#">List item</a></li>
-	<li><a href="#">List item</a></li>
-	<li><a href="#">List item</a></li>
-</ul>
+    <ul>
+        <li>
+            <a href="#">List item</a>
+            <ul class="collapsing">
+                <li>
+                    <a href="#">Sublist item</a>
+                    <ul class="collapsing">
+                        <li>
+                            <a href="#">Sublist item</a>
+                            <ul class="collapsing">
+                                <li><a href="#">Sublist item</a></li>
+                                <li><a href="#">Sublist item</a></li>
+                                <li><a href="#">Sublist item</a></li>
+                                <li><a href="#">Sublist item</a></li>
+                            </ul>
+
+                        </li>
+                        <li><a href="#">Sublist item</a></li>
+                        <li><a href="#">Sublist item</a></li>
+                        <li><a href="#">Sublist item</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Sublist item</a></li>
+                <li><a href="#">Sublist item</a></li>
+                <li><a href="#">Sublist item</a></li>
+            </ul>
+        </li>
+        <li><a href="#">List item</a></li>
+        <li><a href="#">List item</a></li>
+        <li><a href="#">List item</a></li>
+    </ul>
 </body>
 </html>

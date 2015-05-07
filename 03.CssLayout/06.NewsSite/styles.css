@@ -47,7 +47,7 @@ div>header> nav li a:hover{
 }
 
 aside{
-	width: 235px;
+	width: 250px;
 	float: left;
 }
 
@@ -61,7 +61,7 @@ aside nav li{
 
 aside a{
 	text-decoration: none;
-	font-size: 1.1em;
+	font-size: 1.0em;
 	color: #818792;
 }
 

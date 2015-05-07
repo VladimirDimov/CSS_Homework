@@ -3,16 +3,19 @@ ul {
 	display: inline-block;
 }
 
-ul li ul{
+a{
+    text-decoration: none;
+}
+
+ul.collapsing{
 	display: none;	
 }
 
-ul li:hover ul{
+li:hover > ul.collapsing{
 	display: block;
 }
 
-a:hover{
-	cursor: hand;
+li:hover > a{
 	cursor: pointer;
 	text-decoration: underline;
 	font-weight: bold;
