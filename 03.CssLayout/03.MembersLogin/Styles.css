@@ -6,6 +6,7 @@
 
 #container {
     width: 660px;
+    zoom: 1;
 }
 
 header {
@@ -15,6 +16,8 @@ header {
     background: url(resources/images/PC.png) no-repeat left center, -moz-linear-gradient(to bottom, #3A3A3A, #262626); /* FF3.6+ */
     background: url(resources/images/PC.png) no-repeat left center, -o-linear-gradient(to bottom, #3A3A3A, #262626); /* Opera 11.10+ */
     background: url(resources/images/PC.png) no-repeat left center, linear-gradient(to bottom, #3A3A3A, #262626); /* W3C */
+    -moz-border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
     border-radius: 10px 10px 0 0;
 }
 
@@ -48,10 +51,12 @@ input {
     top: 50%;
 }
 
-main {
+#main {
     padding: 20px 70px 10px 10px;
     position: relative;
     background-color: #3A3A3A;
+    -moz-border-radius: 0 0 10px 10px;
+    -webkit-border-radius: 0 0 10px 10px;
     border-radius: 0 0 10px 10px;
 }
 
